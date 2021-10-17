@@ -25,6 +25,13 @@ dan kirim ke alamat url diakhiri .git
 5. commit repo(folder) master
 $ git branch -M master
 
+perhatian...!!!
+sebelum commit
+ kita masukan (config --global) dulu baru bisa 🤭
+$ git config --global user.email "masukan email github"
+
+ $ git config --global user.name "nama github"
+
 6. push 
 $ git push -u origin master
 
@@ -38,8 +45,15 @@ maka gunakan kode otp kalian : kode token
 
 
 
+
 # GUNAKAN CARA INI..
 JIKA GITHUB TIDAK MEMILIKI REPOSITORY DAN FILE
+
+perhatian...!!!
+sebelumnya kita config --global dulu baru bisa 🤭
+$ git config --global user.email "masukan email github"
+
+ $ git config --global user.name "nama github"
 
 1. bikin dulu repository di consol
   $ echo "#belajar-git-remote"
