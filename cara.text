@@ -1,0 +1,75 @@
+git remote dari git(local)ke github
+coment:
+
+# GUNAKAN CARA INI :
+JIKA GITHUB SUDAH MEMILIKI REPOSITORY DAN TIDAK MEMILIKI FILE, FILE DAN FOLDER SUDAH SIAP D UPLOAD KE GITHUB
+
+
+1. buka directory folder yang ingin mengontrol remote github
+  $cd /sdcard/...
+
+2. dan izinkan folder mengelola git 
+  $ git init
+
+3. selanjutnya tambah file  bisa dari terminal atau file manager
+DOWNLOAD DULU NANO D TERMUX
+  $ nano
+
+ ketik isi file apa saja trus save klik ctrl+x dan y beri nama file dan enter
+
+4. mengizinkan file mejadi remote origin,
+dan kirim ke alamat url diakhiri .git
+
+ $ git remote add origin  https://github.com/isi nama github/isi nama repo.git
+
+5. commit repo(folder) master
+$ git branch -M master
+
+6. push 
+$ git push -u origin master
+
+7.  di suruh mengisi nama dan pass
+- masukan nama profil github
+- masukan sandi github
+
+catatan :
+jika github menggunakan verifikasi
+maka gunakan kode otp kalian : kode token
+
+
+
+# GUNAKAN CARA INI..
+JIKA GITHUB TIDAK MEMILIKI REPOSITORY DAN FILE
+
+1. bikin dulu repository di consol
+  $ echo "#belajar-git-remote"
+                 >>README.md 
+
+2. buka directory belajar-git-remot
+dan izinkan folder
+  $ git init 
+
+3. izinkan file
+  $ git add .
+
+4. commit folder dan beri komentar
+  $git commit -m "file ok" 
+
+5. izinkan  file menjadi master
+  $ git branch -M master 
+
+6. izinkan file dan folder jadi remote  origin ke github
+  $ git remote add origin
+     https://github.com/nama github
+     /repo.git
+
+7. push
+$ git Push -u origin master
+
+jika di suruh mengisi nama dan pass
+- masukan nama profil github
+- masukan sandi github
+
+catatan :
+jika github menggunakan verifikasi
+maka gunakan kode otp kalian :
